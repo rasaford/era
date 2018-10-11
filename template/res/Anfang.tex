@@ -2,7 +2,7 @@
 % EINSTELLUNGEN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{./Ressourcen/_Informationen.tex}
+\input{../template/res/_Informationen.tex}
 
 \newcommand{\PraesentationSeitenrand}{8.9mm}
 \newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
@@ -79,13 +79,13 @@
 
 \newcommand{\PraesentationBildUhrenturm}{%
     \begin{textblock*}{10.82cm}[1,1](\paperwidth - \PraesentationSeitenrand - \PraesentationSeitenrand, \paperheight - 9mm)%
-        \includegraphics{./Ressourcen/Praesentation/Bilder/TUM_Uhrenturm.png}%
+        \includegraphics{../template/res/img/TUM_Uhrenturm.png}%
     \end{textblock*}%
 }
 
 \newcommand{\PraesentationStartseiteUhrenturm}{%
     \setbeamertemplate{title page}{%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_RGB.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_RGB.pdf}%
         \PraesentationBildUhrenturm%
         \PraesentationTitelseiteInhalt%
     }%
@@ -94,16 +94,16 @@
 \newcommand{\PraesentationStartseiteFlaggen}{%
     \setbeamertemplate{title page}{%
         \begin{textblock*}{\paperwidth}[0,1](-\PraesentationSeitenrand,\paperheight-\PraesentationSeitenrand)%
-            \includegraphics[min width=\paperwidth,max width=\paperheight,min totalsize={\paperwidth}{\paperheight},keepaspectratio,center]{./Ressourcen/Praesentation/Bilder/Universitaet_Flaggen.jpg}%
+            \includegraphics[min width=\paperwidth,max width=\paperheight,min totalsize={\paperwidth}{\paperheight},keepaspectratio,center]{../template/res/img/Universitaet_Flaggen.jpg}%
         \end{textblock*}%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_weiss.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_weiss.pdf}%
         \PraesentationTitelseiteInhalt%
     }%
 }
 
 \newcommand{\PraesentationStartseiteLeer}{%
     \setbeamertemplate{title page}{%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_weiss.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_weiss.pdf}%
         \PraesentationTitelseiteInhalt%
     }%
 }
@@ -113,7 +113,7 @@
     \PraesentationFarbschemaStandard%
     \PraesentationStartseiteUhrenturm%
     \setbeamertemplate{headline}{%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_RGB.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_RGB.pdf}%
     }%
 }
 
@@ -121,7 +121,7 @@
     \PraesentationFarbschemaWeissBlau%
     \PraesentationStartseiteLeer%
     \setbeamertemplate{headline}{%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_weiss.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_weiss.pdf}%
     }%
 }
 
@@ -136,7 +136,7 @@
             \UniversitaetName\vskip0pt%
             \normalcolor\normalsize\selectfont%
         \end{textblock*}%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_RGB.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_RGB.pdf}%
         \PraesentationBildUhrenturm%
         \PraesentationTitelseiteInhalt%
     }%
@@ -150,7 +150,7 @@
                 \normalcolor\normalsize\selectfont%
             \end{minipage}%
         \end{textblock*}%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_RGB.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_RGB.pdf}%
     }%
 }
 
@@ -158,10 +158,10 @@
     \PraesentationFarbschemaWeissSchwarz%
     \setbeamertemplate{title page}{%
         \PraesentationTitelseiteInhalt%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_weiss.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_weiss.pdf}%
     }
     \setbeamertemplate{headline}{%
-        \PraesentationSeitenkopfInhalt{./Ressourcen/_Bilder/Universitaet_Logo_weiss.pdf}%
+        \PraesentationSeitenkopfInhalt{../template/res/img/Universitaet_Logo_weiss.pdf}%
     }
 }
 
