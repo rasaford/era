@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TUM-Vorlage: Präsentation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Rechteinhaber:
+%     Technische Universität München
+%     https://www.tum.de
+% 
+% Gestaltung:
+%     ediundsepp Gestaltungsgesellschaft, München
+%     http://www.ediundsepp.de
+% 
+% Technische Umsetzung:
+%     eWorks GmbH, Frankfurt am Main
+%     http://www.eworks.de
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zur Wahl des Seitenverhältnisses bitte einen der beiden folgenden Befehle
+% auskommentieren und den ausführen lassen:
+\input{../template/res/Praeambel16zu9.tex} % Seitenverhältnis 16:9
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../_Einstellungen.tex}                    % !!! DATEI ANPASSEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \renewcommand{\PersonTitel}{Dr. rer. nat.}
+\newcommand{\Datum}{\today}
+
+\renewcommand{\PraesentationFusszeileZusatz}{| Tutorium Einführung in die Rechnerarchitektur WS 2018/2019}
+
+\title{Tutorübung 1}
+\author{\PersonVorname{} \PersonNachname}
+\institute[]{\UniversitaetName \\ \FakultaetName}
+\date[\Datum]{15. Oktober 2018}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../template/res/Anfang.tex} % !!! NICHT ENTFERNEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\setlength{\baselineskip}{\PraesentationAbstandAbsatz}
+\setlength{\parskip}{\baselineskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOLIENSTIL: Standard
+% !!!ÄNDERUNG HIER:!!!
+\PraesentationMasterStandard
+
+\PraesentationTitelseite % Fügt die Startseite ein
+
+\begin{frame}
+    \frametitle{Aufgabe 1}
+    \vspace{0.5cm}
+
+    \begin{enumerate}[(a)]
+        \item<1-> Wie kann man überprüfen, ob eine Zahl gerade oder ungerade ist?
+        \item<2->[] Lösung
+        \item<3-> Wie kann man eine bestimmte Bitposition überprüfen 
+            oder auf 0 bzw. 1 setzen (”zwingen“)? 
+            Warum geht das Erzwingen auf 1 nicht universell mit einer Addition?
+        \item<4->[] Lösung 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aufgabe 2}
+    \vspace{0.5cm}
+
+    \begin{enumerate}[(a)]
+        \item<1-> Wodurch kann der 80386 Befehl NEG EAX ersetzt werden?
+        \item<2->[] Lösung
+        \item<3-> Wie addiert man eine vorzeichenlose Zahl im Register AL korrekt auf eine Zahl im Register EBX?
+        \item<4->[] Lösung
+        \item<5-> Man übersetze folgende Berechnung in ein 80386-Programm: \\
+           \begin{center}
+                \( 24 \cdot a + b + c + 1234 \)
+            \end{center}
+            Dabei sind \( a,b,c \) vorzeichenlose 32-Bit-Werte und liegen bereits in den 
+            Registern EAX, EBX bzw. ECX vor. Das Ergebnis soll in EDX stehen.
+        \item<6->[] Lösung
+        \item<5-> Die Division des 80386 legt den Divisionsrest (Remainder)
+            im Register EDX ab, führt also eine Modulo-Berechnung durch.
+            Für welche Teiler könnte man die Modulo- Berechnung wesentlich schneller durchführen? 
+            Welche logische Funktion würde sich anbieten?
+        \item
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Aufgabe 3}
+    \vspace{0.5cm}
+
+    Anhand der Intel-Dokumentation sollen die zu den Opcodes für die Befehle 
+    gehörenden Bytefolgen (als Hexwerte) zusammengebaut werden. 
+    Dies entspricht einem ”Assemblieren“ von Hand von:
+
+    ADD EAX, 0x12345678 \\
+    ADD EAX, EBX \\
+    MOV AX, 0x10 \\
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aufgabe 4: Festkommarechnung}
+    \vspace{0.5cm}
+
+    \begin{enumerate}[(a)]
+        \item Was passiert, wenn man die in der Zentralübung erwähnte Formel zur Berechnung
+        des Werts einer Binärzahl \( (a = \sum_{i=0}^{n} a_i \cdot 2^i ) \) auf negative Indices erweitert?
+        \item Welchen Wertebereich kann man mit 8 binären Vorkommastellen (ohne Vorzeichen)
+        und 8 binären Nachkommastellen (8.8) erreichen?
+        \item 
+        \item 
+    \end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} % !!! NICHT ENTFERNEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
